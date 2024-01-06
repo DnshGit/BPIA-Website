@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+section {
+  padding-top: 3.5rem;
+}
+.text-light {
+  color: rgba(229,229,229,1);
+}
+.text-dark {
+  color: rgba(121,121,121,1); 
+}
+.fit-screen {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  padding: .5rem;
+  position: fixed;
+  width: 100%;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+  font-weight: bold;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+#about h1 {
+  padding-top: 1rem;
+  margin-top: 4rem;
+}
+.display-4 {
+  font-size: 250%;
+}
+#about {
+  height: 100%;
+}
+p {
+  font-size: 1.3rem;
+}
+#about {
+  overflow: hidden;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.btn-primary:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+#services ul{
+  list-style-type: disc;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+#clients {
+  padding-top: 0px;
+}
+.figure {
+  margin: 0px;
+  height: 80%;
+  width: 100%;
+  padding: 0rem 2rem 0rem;
+}
+#team h1 {
+  color: black;
+}
+.media {
+  margin-left: 5rem;
+  margin-top: -1rem;
+}
+.media-body {
+  padding-left: 1rem;
+}
+#slides2 {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(229,229,229,0.5);
+  border-radius: 5px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .display-4 {
+    font-size: 300%;
+  }
+  }
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 250%;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .map, .form {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 576px) {
+  section {
+    padding-top: 0px;
+  }
+  .display-4 {
+    font-size: 150%;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .media {
+    margin: 0 auto;
+  }
+  .media-heading{
+    font-size: 100%;
+    overflow-x: hidden;
+  }
+  .media h5, .media h6 {
+    font-size: 80%;
+  }
+  .form iframe {
+    width: 300px;
+  }
+  .map iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .map, .form {
+    margin-left: -3rem;
+  }
+}
+
+/*---Header Sizing --*/
+hr {
+  border-top: 2px solid black;
+}
+#about hr {
+  width: 50%; 
+}
+.welcome hr {
+  width: 95%;
+  margin-top: -1em;
+}
+#team hr {
+  width: 95%;
+  margin-top: 0.7em;
+}
+#contact hr {
+ border-top: 2px solid black;
+  width: 50%; 
+}
+.map, .form {
+  height: 100%;
+  width: 100%;
+}
+.form iframe {
+  border-left: 10px solid rgba(229,229,229,1);
+}
+iframe {
+  margin-left: 5rem;
+}
+footer hr {
+  width: 75%;
+}
+footer h5 {
+  margin-top: 1rem;
+}
+hr.light {
+  border-top: 2px solid #E5E5E5;
+}
+hr.light-100 {
+  border-top: 2px solid white;
+  width: 100%; 
+}
+
+/*---Images Sizing --*/
+.navbar img {
+  height: 50px;
+  width: 50px;
+}
+#slides1 img {
+  height: 100%;
+  width: 100%;
+  opacity: 50%;
+  max-height: 600px;
+}
+#home {
+  position: relative;
+}
+.homelogo {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: 10;
+}
+#about img {
+  margin-top: 4rem;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 2px;
+}
+#services img {
+  height: 150px;
+  width: 150px;
+}
+.figure-img {
+  height: 100%;
+  width: 100%;
+}
+.sm-figure img {
+  height: 50%;
+}
+.media img {
+  height: 90px;
+  width: 90px;
+}
+#slides2 img {
+  height: 100%;
+  width: 96%;
+  max-height: 500px;
+  margin-left: 2%;
+}
+footer img {
+  height: 150px;
+  width: 300px;
+  margin-bottom: -2rem;
+  margin-top: -2rem;
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+.bg-fix {
+  background-image: url('img/backgrounds/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
